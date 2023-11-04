@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_inputBook">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.utsbuku.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_inputBook"
+        android:name="com.example.utsbuku.ui.inputBook.InputBukuFragment"
+        android:label="@string/title_inputBuku"
+        tools:layout="@layout/fragment_input_buku" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.utsbuku.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:id="@+id/navigation_daftarBuku"
+        android:name="com.example.utsbuku.ui.dafarBook.DashboardFragment"
+        android:label="@string/title_daftarBuku"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.utsbuku.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:id="@+id/navigation_profile"
+        android:name="com.example.utsbuku.ui.profile.NotificationsFragment"
+        android:label="@string/title_profile"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

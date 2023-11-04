@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.inputBook.InputBukuFragment">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Input Buku Baru"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputEditTextLayoutISBN"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="ISBN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtIsbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputEditTextLayoutJudul"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Judul Buku"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputEditTextLayoutISBN"
+        app:layout_constraintStart_toStartOf="@+id/TextInputEditTextLayoutISBN"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputEditTextLayoutISBN"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtJudulBuku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputEditTextLayoutPenulis"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Penulis"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputEditTextLayoutJudul"
+        app:layout_constraintStart_toStartOf="@+id/TextInputEditTextLayoutJudul"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputEditTextLayoutJudul"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtPenulis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputEditTextLayoutPenerbit"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Penerbit"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputEditTextLayoutPenulis"
+        app:layout_constraintStart_toStartOf="@+id/TextInputEditTextLayoutPenulis"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputEditTextLayoutPenulis"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtPenerbit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputEditTextLayoutTahun"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Tahun"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputEditTextLayoutPenerbit"
+        app:layout_constraintStart_toStartOf="@+id/TextInputEditTextLayoutPenerbit"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputEditTextLayoutPenerbit"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtTahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputEditTextLayoutHalaman"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Halaman"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputEditTextLayoutTahun"
+        app:layout_constraintStart_toStartOf="@+id/TextInputEditTextLayoutTahun"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputEditTextLayoutTahun"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtHalaman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputEditTextLayoutHarga"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Harga"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputEditTextLayoutHalaman"
+        app:layout_constraintStart_toStartOf="@+id/TextInputEditTextLayoutHalaman"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputEditTextLayoutHalaman"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/BtnSimpan"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Simpan"
+        app:layout_constraintEnd_toEndOf="@+id/TextInputEditTextLayoutHarga"
+        app:layout_constraintStart_toStartOf="@+id/TextInputEditTextLayoutHarga"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputEditTextLayoutHarga" />
+
+    <Button
+        android:id="@+id/BtnClear"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Batal"
+        app:layout_constraintEnd_toEndOf="@+id/BtnSimpan"
+        app:layout_constraintStart_toStartOf="@+id/BtnSimpan"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSimpan"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
